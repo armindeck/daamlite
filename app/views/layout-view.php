@@ -57,28 +57,34 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body data-theme="<?= $_SESSION["theme"] ?? 'light' ?>">
     <div class="app">
         <header class="header" id="header">
             <div class="header__logo">
                 <a href="<?= Setting::get("app_url") ?>"><?= Setting::get("app_name") ?></a>
             </div>
-            <nav class="header__nav">
-                <a href="<?= Setting::get("app_url") ?>">
-                    <div class="icon"><i class="fa-solid fa-house"></i></div>
-                    <div class="text">Home</div>
-                </a>
-                <a href="<?= Setting::get("app_url") ?>/blog/">
-                    <div class="icon"><i class="fa-solid fa-blog"></i></div>
-                    <div class="text">Blog</div>
-                </a>
-                <a href="<?= Setting::get("app_url") ?>/post/">
-                    <div class="icon"><i class="fa-solid fa-pager"></i></div>
-                    <div class="text">Posts</div>
-                </a>
-            </nav>
+            <div class="header__menu">
+                <label class="header__button header__menu-button">
+                    <i class="fa-solid fa-bars"></i>
+                    <input type="checkbox" id="show-menu" hidden>
+                </label>
+                <nav class="header__nav">
+                    <a href="<?= Setting::get("app_url") ?>">
+                        <div class="icon"><i class="fa-solid fa-house"></i></div>
+                        <div class="text">Home</div>
+                    </a>
+                    <a href="<?= Setting::get("app_url") ?>/blog/">
+                        <div class="icon"><i class="fa-solid fa-blog"></i></div>
+                        <div class="text">Blog</div>
+                    </a>
+                    <a href="<?= Setting::get("app_url") ?>/post/">
+                        <div class="icon"><i class="fa-solid fa-pager"></i></div>
+                        <div class="text">Posts</div>
+                    </a>
+                </nav>
+            </div>
         </header>
-        <main class="main">
+        <main class="main" id="main">
             <?php if(isset($title) && !empty($title)): ?>
                 <h1 class="main__title"><?= htmlspecialchars($title) ?></h1>
             <?php endif; ?>
@@ -92,16 +98,16 @@
                             <li>
                                 <h2><?= htmlspecialchars($post['title']) ?></h2>
                                 <p><?= htmlspecialchars($post['description'] ?? '') ?></p>
-                                <a href="<?= Setting::get('app_url') . '/' . ($post['route'] ?? '') ?>">Read More</a>
+                                <a href="<?= Setting::get('app_url') . '/' . ($post['route'] ?? '') ?>">Leer más</a>
                             </li>
                         <?php endforeach; ?>
                     </ul>
                 <?php else: ?>
-                    <p>No posts available.</p>
+                    <p>No hay publicaciones disponibles.</p>
                 <?php endif; ?>
             <?php endif; ?>
         </main>
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <nav class="footer__nav">
                 <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                 <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
@@ -117,5 +123,6 @@
             </div>
         </footer>
     </div>
+    <script src="<?= Setting::get('app_url') ?>/assets/js/app.js"></script>
 </body>
 </html>

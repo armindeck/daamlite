@@ -1,0 +1,7 @@
+# daamlite - MIT License - (c) 2025 Armin Deck - https://github.com/armindeck/daamlite
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP:X-Requested-With} !^XMLHttpRequest$ [NC]
+RewriteRule \.php$ - [F,L]
+</IfModule>

@@ -1,5 +1,11 @@
 # Historial de cambios
 
+## [2025-10-19] v0.2.0 dev
+
+- Agregue el tema dark y light.
+- Ahora se puede cambiar el tema con javascript (fetch/storage) y php (session).
+- Se puede cambiar de pagina sin recargar todo el contenido.
+
 ## [2025-10-18] v0.1.0 dev
 
 - Agregue muchas mejores.
