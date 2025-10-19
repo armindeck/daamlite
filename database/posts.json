@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "route": "blog\/primer-post",
+        "title": "First Post",
+        "user_token": "abc123",
+        "type": "blog",
+        "date_published": "2025-10-16 22:26:03"
+    },
+    {
+        "id": 2,
+        "route": "acerca-de",
+        "title": "About",
+        "user_token": "abc123",
+        "type": "page",
+        "date_published": "2025-10-16 22:26:03"
+    },
+    {
+        "id": 3,
+        "route": "blog\/segundo-post",
+        "title": "Segundo post",
+        "user_token": "abc123",
+        "type": "blog",
+        "date_published": "2025-10-18 21:49:20"
+    },
+    {
+        "id": 4,
+        "route": "blog\/",
+        "title": "Blog",
+        "user_token": "abc123",
+        "type": "page",
+        "date_published": "2025-10-18 22:34:19"
+    },
+    {
+        "id": 5,
+        "route": "post\/",
+        "title": "Posts",
+        "user_token": "abc123",
+        "type": "page",
+        "date_published": "2025-10-18 22:34:53"
+    },
+    {
+        "id": 6,
+        "route": "home",
+        "title": "Wellcome to daamlite",
+        "user_token": "abc123",
+        "type": "page",
+        "date_published": "2025-10-18 22:36:11"
+    },
+    {
+        "id": 7,
+        "route": "post\/el-nuevo-daamper",
+        "title": "El nuevo Daamper",
+        "user_token": "abc123",
+        "type": "post",
+        "date_published": "2025-10-18 22:39:55"
+    },
+    {
+        "id": 8,
+        "route": "post\/los-nuevos-juegos-de-dbproject",
+        "title": "Los nuevos juegos de dbproject",
+        "user_token": "abc123",
+        "type": "post",
+        "date_published": "2025-10-18 22:58:51"
+    },
+    {
+        "id": 9,
+        "route": "blog\/mi-nuevo-setup",
+        "title": "Mi nuevo setup de juegos de dbproject",
+        "user_token": "abc123",
+        "type": "blog",
+        "date_published": "2025-10-18 23:00:00"
+    }
+]

@@ -1,0 +1,11 @@
+{
+    "title": "First Post",
+    "content": "This is the body of the first post.",
+    "user_token": "abc123",
+    "type": "blog",
+    "route": "blog\/primer-post",
+    "id": 1,
+    "reactions": [],
+    "comments": [],
+    "date_published": "2025-10-16 22:26:03"
+}

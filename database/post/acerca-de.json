@@ -1,0 +1,11 @@
+{
+    "title": "About",
+    "content": "This is the body of the about post.",
+    "user_token": "abc123",
+    "type": "page",
+    "route": "acerca-de",
+    "id": 2,
+    "reactions": [],
+    "comments": [],
+    "date_published": "2025-10-16 22:26:03"
+}

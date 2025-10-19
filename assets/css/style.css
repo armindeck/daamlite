@@ -1,0 +1,132 @@
+/* daamlite - MIT License - (c) 2025 Armin Deck - https://github.com/armindeck/daamlite */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f6fa;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 800px;
+    min-height: 100vh;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.header__logo a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.header__logo a:hover {
+    color: #3498db;
+}
+
+.header__nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.header__nav a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.header__nav a:hover {
+    text-decoration: underline;
+}
+
+
+.main{
+    flex: 1;
+    padding: 20px;
+}
+
+.main ul,
+.main ol{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.footer{
+    padding: 25px 12px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+.footer__nav {
+    margin-bottom: 20px;
+}
+
+.footer__nav a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #3498db;
+    margin: 0 5px;
+}
+
+.footer__nav a:hover {
+    color: #2c3e50;
+}
+
+.footer__copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.footer__copyright a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.footer__copyright a:hover {
+    text-decoration: underline;
+}
+
+.flex { display: flex; flex-wrap: wrap; gap: 2px; }
+.flex-between { justify-content: space-between; }
+.flex-center { justify-content: center; }
+.flex-column { flex-direction: column; }
+
+.text-center { text-align: center; }
+
+
+.gap-5 { gap: 5px; }

@@ -1,0 +1,13 @@
+{
+    "title": "Posts",
+    "content": "Posts",
+    "entries": "post",
+    "user_token": "abc123",
+    "type": "page",
+    "route": "post\/",
+    "id": 5,
+    "reactions": [],
+    "comments": [],
+    "reports": [],
+    "date_published": "2025-10-18 22:34:53"
+}

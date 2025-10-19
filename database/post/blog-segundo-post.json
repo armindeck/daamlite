@@ -1,0 +1,12 @@
+{
+    "title": "Segundo post",
+    "content": "Este es el segundo post del blog.",
+    "user_token": "abc123",
+    "type": "blog",
+    "route": "blog\/segundo-post",
+    "id": 3,
+    "reactions": [],
+    "comments": [],
+    "reports": [],
+    "date_published": "2025-10-18 21:49:20"
+}

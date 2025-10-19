@@ -1,0 +1,9 @@
+{
+    "app_name": "daamlite",
+    "app_url": "http://localhost/daamlite",
+    "app_lang": "es",
+    "timezone": "America/Bogota",
+    "show_project_footer": true,
+    "entry_pages": ["blog", "post", "update"],
+    "entry_pages_limit": 10
+}
